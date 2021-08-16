@@ -27,7 +27,7 @@
       }
     </style>
   </head>
-  <body class="relative h-screen w-screen bg-pale-blue text-center">
+  <body class="relative h-screen w-screen bg-pale-blue flex flex-col justify-center items-center font-red-hat">
     <!-- Order Summary
 
   You can now listen to millions of songs, audiobooks, and podcasts on any 
@@ -41,7 +41,7 @@
   Proceed to Payment
   Cancel Order -->
     <div
-      class="mobile:hidden absolute h-full w-full bg-no-repeat z-background"
+      class="mobile:hidden absolute h-full w-full bg-no-repeat z-background bg-top"
       style="background-image: url('./images/pattern-background-mobile.svg')"
     ></div>
     <div
@@ -53,45 +53,47 @@
         w-full
         bg-no-repeat
         z-background
+        bg-top
       "
       style="background-image: url('./images/pattern-background-desktop.svg')"
     ></div>
 
-    <div class="">
+    <div class="max-w-md w-11/12 bg-white overflow-hidden rounded-3xl">
       <div>
         <img
           src="./images/illustration-hero.svg"
           alt="a girl vibing to music"
+          class="w-full"
         />
       </div>
-      <article>
-        <h1>Order Summary</h1>
-        <p>
+      <article class="p-7 text-center">
+        <h1 class="text-2xl font-black text-dark-blue">Order Summary</h1>
+        <p class="text-paragraph font-medium mt-4 text-desaturated-blue leading-7">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-        <div>
+        <div class="flex p-4 mt-4 bg-very-pale-blue justify-between rounded-xl">
           <div>
             <img src="./images/icon-music.svg" alt="icon; music note">
           </div>
-          <div>
-            <h3>Annual Plan</h3>
-            <p>$59.99/year</p>
+          <div class="flex-grow text-left ml-4">
+            <h3 class="text-dark-blue font-bold text-lg">Annual Plan</h3>
+            <p class="text-desaturated-blue">$59.99/year</p>
           </div>
-          <div>
-            <a href="#">Change</a>
+          <div class="grid place-items-center">
+            <a href="#" class="text-bright-blue font-bold underline hover:opacity-80 hover:no-underline">Change</a>
           </div>
         </div>
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+        <button class="font-bold block w-full p-5 mt-6 bg-bright-blue text-white rounded-xl shadow-2xl hover:opacity-80">Proceed to Payment</button>
+        <button class="font-bold mt-5 text-desaturated-blue hover:text-dark-blue">Cancel Order</button>
       </article>
     </div>
 
-    <div class="attribution">
+    <div class="attribution mt-3">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by <a href="#">CharmfulProgrammer</a>.
     </div>
   </body>
 </html>
