@@ -677,12 +677,12 @@ video {
   width: 100%;
 }
 
-.w-11\/12 {
-  width: 91.666667%;
+.w-\[95\%\] {
+  width: 95%;
 }
 
-.max-w-md {
-  max-width: 28rem;
+.max-w-\[390px\] {
+  max-width: 390px;
 }
 
 .flex-grow {
