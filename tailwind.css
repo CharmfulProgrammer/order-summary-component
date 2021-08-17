@@ -625,6 +625,11 @@ video {
   z-index: -9999;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
